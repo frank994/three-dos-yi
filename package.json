@@ -1,0 +1,30 @@
+{
+  "name": "three-dos-yi",
+  "version": "1.0.0",
+  "description": "A little fun mix some sunshine.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "dependencies": {
+    "three": "^0.108.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frank994/three-dos-yi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frank994/three-dos-yi/issues"
+  },
+  "homepage": "https://github.com/frank994/three-dos-yi#readme"
+}
