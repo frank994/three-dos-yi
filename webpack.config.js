@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './examples/convex.js',
+  entry: './examples/cube.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'

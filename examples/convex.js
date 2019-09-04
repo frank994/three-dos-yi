@@ -5,6 +5,7 @@ var group, camera, scene, renderer;
 init();
 animate();
 function init() {
+  // normal operation
   scene = new THREE.Scene();
   renderer = new THREE.WebGLRenderer({ antialias: true });
   renderer.setPixelRatio(window.devicePixelRatio);
@@ -32,9 +33,9 @@ function init() {
   scene.add(group);
   // points
   var vertices = new THREE.DodecahedronGeometry(10).vertices;
-  for (var i = 0; i < vertices.length; i++) {
-    //vertices[ i ].add( randomPoint().multiplyScalar( 2 ) ); // wiggle the points
-  }
+  // for (var i = 0; i < vertices.length; i++) {
+  //   //vertices[ i ].add( randomPoint().multiplyScalar( 2 ) ); // wiggle the points
+  // }
   var pointsMaterial = new THREE.PointsMaterial({
     color: 0x0080ff,
     map: texture,
@@ -59,7 +60,7 @@ function init() {
   mesh.material.side = THREE.FrontSide; // front faces
   mesh.renderOrder = 1;
   group.add(mesh);
-  //
+  // add resize listener
   window.addEventListener('resize', onWindowResize, false);
 }
 function onWindowResize() {
@@ -69,7 +70,8 @@ function onWindowResize() {
 }
 function animate() {
   requestAnimationFrame(animate);
-  group.rotation.y += 0.005;
+  // group.rotation.y += 0.005;
+  group.position.z += 0.005;
   render();
 }
 function render() {
